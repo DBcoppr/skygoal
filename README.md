@@ -7,4 +7,4 @@ you need to change mongodb url link in backend in .env file and use npm start fo
 # 2 responsive site
 # 3 used reactjs for frontend
 # 4 used the required technology like mongoDb,express,nodejs,reactjs
-# 5 hosted on netlify
+# 5 hosted on netlify https://amazing-gingersnap-c8034d.netlify.app/
