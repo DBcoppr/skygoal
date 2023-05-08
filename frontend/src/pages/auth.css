@@ -1,0 +1,144 @@
+
+.auth-page{
+    width: 70%;
+    min-height: 540px;
+    background-color: white;
+    border-radius: 10px;
+    position: relative;
+    display: flex;
+}
+.auth-container1{
+    position: relative;
+    flex:1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.form-container-parent{
+
+}
+
+header{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    top: 10px;
+    left: 10px;
+}
+header p{
+    font-weight: 700;
+    margin: 0;
+    
+}
+.form-container-parent h1{
+    font-weight: 500;
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+.subheader{
+    margin: 0;
+    color: #7f7e7e;
+    font-size: 15px;
+}
+.form-container{
+    margin-top: 35px;
+    position: relative;
+}
+.fc1{
+    display: flex;
+    margin-bottom: 10px;
+    flex-direction: column;
+}
+.fc1 span{
+    font-size: 14px;
+    color: #2a2929;
+    padding-bottom: 3px;
+}
+.fc1 input{
+    padding: 10px 10px;
+    border: 2px solid #ccc;
+    border-radius: 3px;
+}
+.signin-btn{
+    width: 100%;
+    padding: 10px 10px;
+    color: white;
+    background-color: var(--purple-dark);
+    border:none;
+    border-radius:2px;
+    margin-top:13px;
+    cursor: pointer;
+
+}
+.account{
+    margin-top: 20px;
+    color: #585858;
+    font-size: 15px;
+}
+.signup{
+    background: none;
+    border: none;
+    color: var(--purple-dark);
+    font-size: 15px;
+    cursor: pointer;
+}
+.signin-btn:hover{
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+    transition: box-shadow 20ms ease-in-out;
+}
+.auth-container2{
+    display: block;
+    flex: 1;
+    background-color: var(--light-blue);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.auth-container2 svg{
+    width: 170px;
+    height: auto;
+}
+.ice-frost{
+    position: absolute;
+    width: 240px;
+    height: 160px;
+    background: rgba(0,0,0,0);
+    transform: translate(0px, 50%);
+  }
+footer{
+    font-size: 12px;
+    color: #c0bfbf;
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+#error-msg{
+    font-size: 13px;
+    color: red;
+    position: absolute;
+    top: -25px;
+}
+  @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+    .ice-frost{
+      -webkit-backdrop-filter: blur(10px);
+      backdrop-filter: blur(10px);
+    }
+  }
+
+@media  screen and (max-width:900px) {
+    .auth-container2{
+        display: none;
+    }
+}
+@media  screen and (max-width:550px) {
+    /* .auth-container1{
+        width: ;
+    } */
+    .auth-page{
+        width: 100%;
+        height: 100vh;
+        border-radius: 0;
+    }
+   
+}
